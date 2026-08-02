@@ -168,6 +168,11 @@ export default function Home() {
 
   <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
 
+
+
+
+    
+
     {/* Photo */}
 
     <div className="flex justify-center">
@@ -229,6 +234,71 @@ export default function Home() {
     </div>
 
 
+-----
+
+<section id="melika" className="px-6 py-24">
+
+  <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+
+    {/* Text */}
+    <div className="order-2 md:order-1">
+
+      <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+        Research Collaborator
+      </p>
+
+      <h2 className="mt-4 text-4xl font-bold tracking-tight">
+        Exploring cancer mechanisms through molecular biology and computational approaches.
+      </h2>
+
+      <p className="mt-6 text-lg leading-relaxed text-gray-700">
+
+        Melika Amelimojarad is a researcher interested in cancer biology,
+        molecular mechanisms of disease, and computational approaches in
+        biomedical research.
+
+      </p>
+
+      <p className="mt-4 text-lg leading-relaxed text-gray-700">
+
+        Her research interests focus on understanding the role of autophagy
+        and cellular stress responses in cancer progression, as well as
+        investigating molecular pathways involved in tumor development and
+        therapeutic responses.
+
+      </p>
+
+      <p className="mt-4 text-lg leading-relaxed text-gray-700">
+
+        She is also interested in bioinformatics approaches for analyzing
+        complex biological datasets and is currently expanding her knowledge
+        of machine learning methods to support data-driven discoveries in
+        biomedical research.
+
+      </p>
+
+    </div>
+
+
+    {/* Photo */}
+    <div className="order-1 flex justify-center md:order-2">
+
+      <Image
+        src="/gallery/melika.jpg"
+        alt="Melika Amelimojarad"
+        width={420}
+        height={520}
+        className="rounded-3xl object-cover shadow-xl"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+
+----------------
 
     {/* Research Identity Card */}
     <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
