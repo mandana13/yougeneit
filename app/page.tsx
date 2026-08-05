@@ -30,16 +30,45 @@ export default function Home() {
 
 
 
-        <h1 className="mt-6 max-w-5xl text-5xl font-bold tracking-tight sm:text-7xl">
+       <section
+  className="relative overflow-hidden px-6 py-32 bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/gallery/dna-background.jpg')",
+  }}
+>
 
-          <span className="bg-gradient-to-r from-yellow-500 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
 
-            Research runs in your DNA.
+  {/* Dark transparent layer to make text readable */}
+  <div className="absolute inset-0 bg-black/50"></div>
 
-          </span>
 
-        </h1>
+  {/* Text */}
+  <div className="relative mx-auto max-w-6xl text-center">
 
+
+    <h1 className="mt-6 max-w-5xl text-5xl font-bold tracking-tight sm:text-7xl">
+
+      <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
+
+        Research runs in your DNA.
+
+      </span>
+
+    </h1>
+
+
+    <p className="mx-auto mt-8 max-w-3xl text-lg text-gray-200">
+
+      Exploring disease mechanisms through genomics,
+      microbiome biology, and computational discovery.
+
+    </p>
+
+
+  </div>
+
+
+</section>
 
 
         <p className="mt-6 text-lg text-gray-600">
@@ -161,135 +190,66 @@ export default function Home() {
 
       </section>
 
-{/* About Researcher Section */}
-
+{/* About Researcher1 Section */}
 
 <section id="about" className="px-6 py-24">
 
-  <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+  <div className="mx-auto max-w-6xl">
+
+    {/* Mandana Profile */}
+    <div className="grid items-center gap-12 md:grid-cols-2">
+
+
+      {/* Photo */}
+      <div className="flex justify-center">
+
+        <Image
+          src="/gallery/mandana.jpg"
+          alt="Mandana AmeliMojarad"
+          width={420}
+          height={520}
+          className="rounded-3xl object-cover shadow-xl"
+        />
+
+      </div>
 
 
 
+      {/* Text */}
+      <div>
 
-    
-
-    {/* Photo */}
-
-    <div className="flex justify-center">
-
-      <Image
-      
-        src="/gallery/mandana.jpg"
-        alt="Mandana AmeliMojarad"
-        width={420}
-        height={520}
-        className="rounded-3xl object-cover shadow-xl"
-      />
-
-    </div>
+        <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+          About the Researcher
+        </p>
 
 
+        <h2 className="mt-4 text-4xl font-bold tracking-tight">
+          Bridging genomics, biology, and computation to understand disease.
+        </h2>
 
 
-    {/* Text */}
-    <div>
-
-      <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-        About the Researcher
-      </p>
-
-
-      <h2 className="mt-4 text-4xl font-bold tracking-tight">
-        Bridging genomics, biology, and computation to understand disease.
-      </h2>
+        <p className="mt-6 text-lg leading-relaxed text-gray-700">
+          Mandana AmeliMojarad is a researcher working at the intersection
+          of cancer biology, genomics, microbiome science, and computational
+          approaches to uncover molecular mechanisms underlying human disease.
+        </p>
 
 
-      <p className="mt-6 text-lg leading-relaxed text-gray-700">
-
-        Mandana AmeliMojarad is a researcher working at the intersection
-        of cancer biology, genomics, microbiome science, and computational
-        approaches to uncover molecular mechanisms underlying human disease.
-
-      </p>
+        <p className="mt-4 text-lg leading-relaxed text-gray-700">
+          Her research focuses on understanding how genetic variation,
+          microbial ecosystems, environmental factors, and molecular pathways
+          interact to influence disease progression and therapeutic responses.
+        </p>
 
 
-      <p className="mt-4 text-lg leading-relaxed text-gray-700">
+        <p className="mt-4 text-lg leading-relaxed text-gray-700">
+          By integrating multi-omics data, single-cell technologies,
+          and computational biology, her work aims to identify novel
+          biological mechanisms and potential therapeutic opportunities.
+        </p>
 
-        Her research focuses on understanding how genetic variation,
-        microbial ecosystems, environmental factors, and molecular pathways
-        interact to influence disease progression and therapeutic responses.
+      </div>
 
-      </p>
-
-
-      <p className="mt-4 text-lg leading-relaxed text-gray-700">
-
-        By integrating multi-omics data, single-cell technologies,
-        and computational biology, her work aims to identify novel
-        biological mechanisms and potential therapeutic opportunities.
-
-      </p>
-
-
-    </div>
-
-
------
-
-<section id="melika" className="px-6 py-24">
-
-  <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-
-    {/* Text */}
-    <div className="order-2 md:order-1">
-
-      <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-        Research Collaborator
-      </p>
-
-      <h2 className="mt-4 text-4xl font-bold tracking-tight">
-        Exploring cancer mechanisms through molecular biology and computational approaches.
-      </h2>
-
-      <p className="mt-6 text-lg leading-relaxed text-gray-700">
-
-        Melika Amelimojarad is a researcher interested in cancer biology,
-        molecular mechanisms of disease, and computational approaches in
-        biomedical research.
-
-      </p>
-
-      <p className="mt-4 text-lg leading-relaxed text-gray-700">
-
-        Her research interests focus on understanding the role of autophagy
-        and cellular stress responses in cancer progression, as well as
-        investigating molecular pathways involved in tumor development and
-        therapeutic responses.
-
-      </p>
-
-      <p className="mt-4 text-lg leading-relaxed text-gray-700">
-
-        She is also interested in bioinformatics approaches for analyzing
-        complex biological datasets and is currently expanding her knowledge
-        of machine learning methods to support data-driven discoveries in
-        biomedical research.
-
-      </p>
-
-    </div>
-
-
-    {/* Photo */}
-    <div className="order-1 flex justify-center md:order-2">
-
-      <Image
-        src="/gallery/melika.jpg"
-        alt="Melika Amelimojarad"
-        width={420}
-        height={520}
-        className="rounded-3xl object-cover shadow-xl"
-      />
 
     </div>
 
@@ -298,9 +258,95 @@ export default function Home() {
 </section>
 
 
-----------------
 
-    {/* Research Identity Card */}
+
+
+{/* About Researcher2 Section */}
+
+<section id="melika" className="px-6 py-24">
+
+  <div className="mx-auto max-w-6xl">
+
+
+    {/* Melika Profile */}
+    <div className="grid items-center gap-12 md:grid-cols-2">
+
+
+      {/* Text */}
+      <div className="order-2 md:order-1">
+
+
+        <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+          Research Collaborator
+        </p>
+
+
+        <h2 className="mt-4 text-4xl font-bold tracking-tight">
+          Exploring cancer mechanisms through molecular biology and computational approaches.
+        </h2>
+
+
+        <p className="mt-6 text-lg leading-relaxed text-gray-700">
+          Melika Amelimojarad is a researcher interested in cancer biology,
+          molecular mechanisms of disease, and computational approaches in
+          biomedical research.
+        </p>
+
+
+        <p className="mt-4 text-lg leading-relaxed text-gray-700">
+          Her research interests focus on understanding the role of autophagy
+          and cellular stress responses in cancer progression, as well as
+          investigating molecular pathways involved in tumor development and
+          therapeutic responses.
+        </p>
+
+
+        <p className="mt-4 text-lg leading-relaxed text-gray-700">
+          She is also interested in bioinformatics approaches for analyzing
+          complex biological datasets and is currently expanding her knowledge
+          of machine learning methods to support data-driven discoveries in
+          biomedical research.
+        </p>
+
+
+      </div>
+
+
+
+      {/* Photo */}
+      <div className="order-1 flex justify-center md:order-2">
+
+        <Image
+          src="/gallery/melika.jpg"
+          alt="Melika AmeliMojarad"
+          width={420}
+          height={520}
+          className="rounded-3xl object-cover shadow-xl"
+        />
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+
+
+{/* Research Identity Card */}
+
+<section className="px-6 pb-24">
+
+  <div className="mx-auto max-w-6xl">
+
+
     <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
 
 
@@ -341,7 +387,9 @@ export default function Home() {
 
 
 
+
       <div className="mt-10 border-t pt-6">
+
 
         <h3 className="text-xl font-bold">
           Scientific Approach
@@ -350,21 +398,26 @@ export default function Home() {
 
         <ul className="mt-4 space-y-3 text-gray-700">
 
+
           <li>
             🧬 Integrative genomics
           </li>
+
 
           <li>
             🦠 Microbial-host interactions
           </li>
 
+
           <li>
             🧠 Disease-associated molecular pathways
           </li>
 
+
           <li>
             💻 Data-driven biological discovery
           </li>
+
 
         </ul>
 
@@ -379,7 +432,6 @@ export default function Home() {
 
 
 </section>
-
 
 {/* Publications Section */}
 <section id="publications" className="px-6 py-24 bg-white">
@@ -585,10 +637,11 @@ export default function Home() {
       />
 
       <Image
-        src="/gallery/figure2.jpg"
+        src="/gallery/figure2.jpeg"
         alt="Scientific Figure 2"
         width={700}
         height={500}
+          loading="eager"
         className="rounded-2xl shadow-md transition duration-300 hover:scale-[1.02] hover:shadow-xl"
       />
 
@@ -597,6 +650,7 @@ export default function Home() {
         alt="Scientific Figure 3"
         width={700}
         height={500}
+          loading="eager"
         className="rounded-2xl shadow-md transition duration-300 hover:scale-[1.02] hover:shadow-xl"
       />
 
@@ -653,24 +707,35 @@ export default function Home() {
     </p>
 
 
+<div className="mt-12 rounded-3xl border border-gray-200 bg-white p-10 shadow-sm">
 
-    <div className="mt-12 rounded-3xl border border-gray-200 bg-white p-10 shadow-sm">
+  <div className="space-y-6">
 
-      <div className="space-y-6">
+    <div>
+      <p className="text-sm uppercase tracking-wide text-gray-500">
+        Email
+      </p>
 
-        <div>
-          <p className="text-sm uppercase tracking-wide text-gray-500">
-            Email
-          </p>
+      <a
+        href="mailto:mandanalee13@gmail.com"
+        className="mt-1 block text-lg font-medium text-blue-600 hover:underline"
+      >
+        Mandana AmeliMojarad
+        <br />
+        mandanalee13@gmail.com
+      </a>
 
-          <a
-            href="mailto:your.email@example.com"
-            className="mt-1 block text-lg font-medium text-blue-600 hover:underline"
-          >
-            mandanalee13@gmail.com
-          </a>
-        </div>
 
+      <a
+        href="mailto:melikaamelimojarad@gmail.com"
+        className="mt-3 block text-lg font-medium text-pink-600 hover:underline"
+      >
+        Melika AmeliMojarad
+        <br />
+        melikaamelimojarad@gmail.com
+      </a>
+
+    </div>
 
 
 
@@ -688,7 +753,19 @@ export default function Home() {
   Mandana AmeliMojarad
 </a>
 
-        </div>
+
+<a
+    href="https://www.linkedin.com/in/melika-ameli-mojarad-08344b1b7"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-1 block text-lg font-medium text-blue-600 hover:underline"
+  >
+    Melika AmeliMojarad
+  </a>
+
+</div>
+
+
 
       </div>
 
